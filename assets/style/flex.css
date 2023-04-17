@@ -1,7 +1,13 @@
 .menu {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 33px;
+    column-gap: 33px;
+}
+
+@media screen and (min-width: 720px) {
+    .menu {
+        column-gap: 75px;
+    }
 }
