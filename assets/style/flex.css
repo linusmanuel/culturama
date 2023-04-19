@@ -22,6 +22,20 @@
   flex-grow: 1;
 }
 
+.eventos__lista,
+.agenda__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.eventos__item,
+.agenda__item {
+  flex-grow: 1;
+}
+
+
 @media screen and (min-width: 720px) {
   .menu {
     column-gap: 75px;
@@ -35,6 +49,11 @@
 
   .categorias__lista li {
     min-width: 306px;
+  }
+
+  .eventos__lista,
+  .agenda__lista {
+    justify-content: end;
   }
 }
 
