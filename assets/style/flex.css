@@ -12,6 +12,16 @@
   row-gap: 0.5rem;
 }
 
+.destaques {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.destaques__barra {
+  flex-grow: 1;
+}
+
 @media screen and (min-width: 720px) {
   .menu {
     column-gap: 75px;
