@@ -9,12 +9,22 @@
 .categorias__lista {
   display: flex;
   flex-direction: column;
-   gap: 0.5rem;
+  row-gap: 0.5rem;
 }
 
 @media screen and (min-width: 720px) {
   .menu {
     column-gap: 75px;
+  }
+
+  .categorias__lista {
+    gap: 16px 26px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .categorias__lista li {
+    min-width: 306px;
   }
 }
 
