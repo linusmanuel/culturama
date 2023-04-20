@@ -21,8 +21,8 @@
   grid-template-areas: 
     "imagem imagem"
     "nome nome"
-    "local local"
-    "data botao"
+    "data data"
+    "localidade botao"
   ;
 }
 
@@ -32,10 +32,16 @@
 
 .eventos__item h3 {
   grid-area: nome;
+  align-self: center;
 }
 
 .eventos__item h4 {
   grid-area: data;
+}
+
+.eventos__item h5 {
+  grid-area: localidade;
+  align-self: end;
 }
 
 .eventos__item button  {
