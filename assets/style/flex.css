@@ -35,6 +35,11 @@
   flex-grow: 1;
 }
 
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 @media screen and (min-width: 720px) {
   .menu {
