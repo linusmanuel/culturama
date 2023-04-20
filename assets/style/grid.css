@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 720px) {
   .banner {
-    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-columns: calc(50% - .75rem) auto auto;
     gap: 16px 24px;
   }
 
