@@ -16,6 +16,8 @@
 
 .eventos__item {
   display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto repeat(2, 1fr) auto;
   grid-template-areas: 
     "imagem imagem"
     "nome nome"
@@ -39,6 +41,30 @@
 .eventos__item button  {
   grid-area: botao;
 }
+
+.agenda__item {
+  display: grid;
+  /* grid-template-rows: auto 1fr; */
+  grid-template-areas: 
+    "imagem imagem"
+    "informacoes atracao"
+  ;
+}
+
+.agenda__item img {
+  grid-area: imagem;
+  object-fit: cover;
+  height: 100%;
+}
+
+.agenda__informacoes {
+  grid-area: informacoes;
+}
+
+.agenda__atracao {
+  grid-area: atracao;
+}
+
 @media screen and (min-width: 720px) {
   .banner {
     grid-template-columns: calc(50% - .75rem) auto auto;
