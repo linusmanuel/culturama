@@ -41,6 +41,10 @@
   flex-wrap: wrap;
 }
 
+.rodape__logo {
+  align-self: flex-end;
+}
+
 @media screen and (min-width: 720px) {
   .menu {
     column-gap: 75px;
@@ -90,6 +94,38 @@
   
   .menu__item:nth-child(5) {
     order: 2;
+  }
+
+  .categorias {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 24px;
+    grid-template-areas: 
+      "titulo titulo"
+      "lista destaques"
+      "lista imagem"
+    ;
+  }
+
+  .categorias__titulo {
+    grid-area: titulo;
+  }
+
+  .categorias__lista {
+    grid-area: lista;
+    flex-direction: column;
+  }
+
+  .categorias__destaques {
+    grid-area: destaques;
+  }
+
+  .categorias__imagem {
+    grid-area: imagem;
+  }
+
+  .categorias__lista li {
+    min-width: 282px;
   }
 
 }
